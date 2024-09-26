@@ -17,16 +17,17 @@
                         </div>
                         <p class="card-text">
                         <ul>
+                            <img src="{{asset("img/$car[image]")}}" class="card-img-top">
                             <li>
-                                {{ $car['consumption'] }}
+                               Fogyasztás: {{ $car['consumption'] }}
 
                             </li>
                             <li>
-                                {{ $car['color'] }}
+                                Szín: {{ $car['color'] }}
                             </li>
                         </ul>
                         </p>
-
+                        <a href="{{route("home")}}" class="btn btn-primary">Főoldal</a>
                     </div>
                 </div>
             </div>
